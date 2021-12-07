@@ -12,7 +12,8 @@ jobs:
       - name: Display JSON
         with:
           path: './'
-      - run: |
-          vehicleData=vehicle-data.json >> GITHUB_ENV
-          echo "Vehicle: ${{ env.vehicleData }}"
-          echo ${{ vehicle-data.json }}
+        run: echo "hello world!"
+      # - run: |
+      #     vehicleData=vehicle-data.json >> GITHUB_ENV
+      #     echo "Vehicle: ${{ env.vehicleData }}"
+      #     echo ${{ vehicle-data.json }}
