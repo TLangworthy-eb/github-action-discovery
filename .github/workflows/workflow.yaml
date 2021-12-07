@@ -13,7 +13,7 @@ jobs:
         with:
           path: './'
         # run: echo "hello world!"
-        run: |
+      - run: |
           vehicleData=vehicle-data.json >> GITHUB_ENV
           echo "Vehicle: ${{ env.vehicleData }}"
           echo ${{ vehicle-data.json }}
