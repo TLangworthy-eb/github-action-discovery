@@ -14,7 +14,7 @@ jobs:
           path: './'
         
       - name: Echo vehicle data
-        run: echo ${{fromJSON(vehicle.json)}}
+        run: cat vehicle.json
       
       - name: Assign to env variable
         run: echo "vehicleData=$(cat vehicle.json)" >> $GITHUB_ENV
