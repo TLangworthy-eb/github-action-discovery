@@ -6,11 +6,9 @@ jobs:
   display-data:
     runs-on: ubuntu-latest
     steps:
-
       - uses: actions/checkout@v2
-        
+
       - name: Display JSON
-        uses: actions/checkout@v2
         with:
           path: './'
         run: |
