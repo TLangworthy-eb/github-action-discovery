@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: './'
-        run: |
+        - run: |
           vehicleData=vehicle-data.json >> GITHUB_ENV
           echo "Vehicle: ${{ env.vehicleData }}"
           echo ${{ vehicle-data.json }}
