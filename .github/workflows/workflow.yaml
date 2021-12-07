@@ -8,13 +8,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Display JSON
+      - name: Set Path
         uses: actions/checkout@v2
         with:
           path: './'
         
-      - run: echo "hello world!"
+      - name: Echo statement
+        run: echo "hello world!"
       
-      - run: |
-          echo "vehicleData=echo 'hello world!'" >> $GITHUB_ENV
-          echo $vehicleData
+      - name: Assign to env variable
+        run: echo "vehicleData=echo 'hello world!'" >> $GITHUB_ENV
+
+      - name: Display Data
+        run: echo $vehicleData
