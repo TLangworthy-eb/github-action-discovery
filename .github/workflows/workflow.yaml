@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Display JSON
       - uses: actions/checkout@v2
+        
+      - name: Display JSON
         with:
           path: './'
         run: |
