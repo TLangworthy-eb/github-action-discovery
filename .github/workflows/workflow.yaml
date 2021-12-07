@@ -16,5 +16,5 @@ jobs:
       - run: echo "hello world!"
       
       - run: |
-          echo vehicleData=hello world! >> GITHUB_ENV
+          echo "vehicleData=hello world!" >> $GITHUB_ENV
           echo ${{ vehicleData }}
