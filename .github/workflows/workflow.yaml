@@ -5,10 +5,11 @@ on:
 jobs:
   display-data:
     runs-on: ubuntu-latest
+    uses: actions/checkout@v2
+
     steps:
 
       - name: Display JSON
-        uses: actions/checkout@v2
         with:
           path: './'
       - run: |
