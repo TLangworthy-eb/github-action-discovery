@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Display JSON
         uses: actions/checkout@v2
-        with:
-          path: './'
+        # with:
+        #   path: './'
         run: echo "hello world!"
       # - run: |
       #     vehicleData=vehicle-data.json >> GITHUB_ENV
