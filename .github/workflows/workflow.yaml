@@ -12,5 +12,5 @@ jobs:
         # with:
         #   path: './'
         run: |
-          "vehicleData=vehicle-data.json" >> GITHUB_ENV
+          vehicleData=vehicle-data.json >> GITHUB_ENV
           echo "Vehicle: ${{ env.vehicleData }}"
