@@ -17,4 +17,4 @@ jobs:
       
       - run: |
           echo "vehicleData=$(cat vehicle-data.json)" >> GITHUB_ENV
-          echo cat vehicle-data.json
+          echo $(cat vehicle-data.json)
