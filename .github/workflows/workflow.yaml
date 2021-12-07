@@ -1,0 +1,15 @@
+name: Vehicle Test Action
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Display JSON
+        with:
+          path: './'
+          run: |
+            "vehicleData=vehicle-data.json" >> GITHUB_ENV
+            echo "Vehicle: ${{ env.vehicleData }}"
