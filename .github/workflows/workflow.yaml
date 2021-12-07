@@ -6,11 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+
       - name: Display JSON
+      - uses: actions/checkout@v2
         with:
           path: './'
-
-      - uses: actions/checkout@v2
         run: |
           vehicleData=vehicle-data.json >> GITHUB_ENV
           echo "Vehicle: ${{ env.vehicleData }}"
