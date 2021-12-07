@@ -17,7 +17,7 @@ jobs:
         run: cat vehicle.json
       
       - name: Assign to env variable
-        run: echo "vehicleData=$(cat vehicle.json)" >> $GITHUB_ENV
+        run: echo vehicleData=$(cat vehicle.json) >> $GITHUB_ENV
 
       - name: Display Data
         run: echo $vehicleData
